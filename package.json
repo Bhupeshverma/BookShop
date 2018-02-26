@@ -26,6 +26,7 @@
     "jade": "~1.11.0",
     "mongoose": "^5.0.6",
     "morgan": "~1.9.0",
+    "nuka-carousel": "^3.0.1",
     "react": "^16.2.0",
     "react-bootstrap": "^0.32.1",
     "react-credit-cards": "^0.7.0",

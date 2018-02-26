@@ -15,7 +15,6 @@ const style ={
   },
   checkout:{
     padding:"20px",
-
   }
 }
 class Cart extends Component{
@@ -155,6 +154,7 @@ const panels = [
           <Grid.Row>
           <Header as='h3'>{cartArr.title}</Header>
           <Header as='h4'>Price $.{cartArr.price}</Header>
+          <Header as='h4'>quantity:{cartArr.quantity}</Header>
           <Button.Group>
             <Button icon onClick={this.onDecrement.bind(this, cartArr._id, cartArr.quantity)}>
               <Icon name='minus' />
@@ -200,10 +200,10 @@ const panels = [
                     </Form>
                     </Grid.Column>
                   </Grid.Row>
-                  <Button type='submit'color='blue' onClick={this.handleProced.bind(this)}>Submit</Button>
-                  <Button content="back" color="black" onClick={this.previosStep.bind(this)} style={{marginLeft:"20px"}}/>
-                  </Grid>
 
+                  </Grid>
+                  <Button content="back" color="black" onClick={this.previosStep.bind(this)} style={{marginLeft:"20px"}}/>
+                  <Button type='submit'color='blue' onClick={this.handleProced.bind(this)}>Submit</Button>
                 </Segment>
       case 3:
         return <Segment>

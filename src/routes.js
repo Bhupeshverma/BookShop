@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { Router, Route } from 'react-router-dom';
+import { Router, Route,Switch } from 'react-router-dom';
 import BookList from './components/pages/bookList';
 import BookForm from './components/pages/bookForm';
 import Cart from './components/pages/cart';
@@ -24,11 +24,13 @@ class App extends Component {
         <Navigation
          cartItemsNumber={this.props.totalQty}
          />
-
+         <Switch>
           <Route exact path="/" component={BookList}/>
           <Route path="/admin" component={BookForm}/>
           <Route path="/cart" component={Cart}/>
+          </Switch>
           <Footer/>
+
       </div>
     )
   }

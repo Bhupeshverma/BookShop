@@ -5,6 +5,7 @@ import BookItem from './bookItem';
 import BookForm from './bookForm';
 import Cart from './cart';
 //import {Grid, Row, Col,Panel,Button, ButtonGroup, Label,Carousel} from 'react-bootstrap';
+//import Carousel from 'nuka-carousel';
 var Carousel = require('nuka-carousel');
 import { Grid, Image,Sidebar} from 'semantic-ui-react'
 
@@ -29,16 +30,16 @@ class BookList extends Component{
     return(
       <Grid container >
        <Grid.Row centered >
-        <Carousel autoplay>
-        <Image src="/images/home1.jpg"/>
-        <Image src="/images/home2.jpg"/>
-        </Carousel>
+       <Carousel>
+         <Image src="/images/home1"/>
+         <Image src="/image/home2"/>
+       </Carousel>
        </Grid.Row>
        <Grid.Row doubling columns={4}>
         {bookList}
       </Grid.Row>
       </Grid>
-      
+
     )
   }
 }
