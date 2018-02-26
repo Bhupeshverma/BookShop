@@ -3,16 +3,16 @@ Get Started
 
 1. Installation
 
-  On the command prompt run the following commands
+  	On the command prompt run the following commands
 
-  $ git clone https://github.com/Bhupeshverma/BookShop.git
+  	$ git clone https://github.com/Bhupeshverma/BookShop.git
 
-  $ cd BookShop/
+  	$ cd BookShop/
 
-  $ npm install
+  	$ npm install
 
 2. How to Run
 
-  Run the following command in your terminal.
+  	Run the following command in your terminal.
 
-  $ npm start or nodemon 
+  	$ npm start or nodemon 
